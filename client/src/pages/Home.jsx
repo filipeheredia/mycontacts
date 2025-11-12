@@ -1,31 +1,11 @@
 import { useState, useMemo } from 'react';
+import { useLocation } from 'wouter';
+import { useContacts } from '../contexts/ContactsContext';
 
 export default function Home() {
+  const [, setLocation] = useLocation();
+  const { contacts } = useContacts();
   const [searchTerm, setSearchTerm] = useState('');
-  
-  const [contacts] = useState([
-    {
-      id: 1,
-      name: 'Mateus Silva',
-      email: 'mateus@devacademy.com.br',
-      phone: '(41) 99999-9999',
-      category: 'instagram'
-    },
-    {
-      id: 2,
-      name: 'Mateus Silva',
-      email: 'mateus@devacademy.com.br',
-      phone: '(41) 99999-9999',
-      category: 'instagram'
-    },
-    {
-      id: 3,
-      name: 'Mateus Silva',
-      email: 'mateus@devacademy.com.br',
-      phone: '(41) 99999-9999',
-      category: 'instagram'
-    }
-  ]);
 
   // Filtrar contatos em tempo real baseado no termo de busca
   const filteredContacts = useMemo(() => {
@@ -73,7 +53,10 @@ export default function Home() {
           <h1 className="text-2xl font-bold text-[#222222]">
             {filteredContacts.length} {filteredContacts.length === 1 ? 'contato' : 'contatos'}
           </h1>
-          <button className="h-[43px] px-[14px] border-2 border-[#5061fc] rounded text-base font-semibold text-[#5061fc] hover:bg-[#5061fc] hover:text-white transition-colors">
+          <button 
+            onClick={() => setLocation('/new')}
+            className="h-[43px] px-[14px] border-2 border-[#5061fc] rounded text-base font-semibold text-[#5061fc] hover:bg-[#5061fc] hover:text-white transition-colors"
+          >
             Novo contato
           </button>
         </div>

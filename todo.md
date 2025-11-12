@@ -32,3 +32,15 @@
 - [x] Remover configurações do TypeScript
 - [x] Atualizar ESLint para JavaScript
 - [x] Testar aplicação
+
+## Tela de Cadastro de Contato
+
+- [x] Criar Context API para gerenciamento de contatos
+- [x] Criar componente NewContact com formulário
+- [x] Implementar validação de campos obrigatórios
+- [x] Adicionar máscaras para telefone
+- [x] Implementar lógica de habilitação do botão Cadastrar
+- [x] Adicionar rota /new para tela de cadastro
+- [x] Copiar assets do Figma para o projeto
+- [x] Integrar formulário com Context API
+- [x] Testar navegação e validação
