@@ -16,3 +16,19 @@
 - [x] Adicionar lógica de filtro de contatos
 - [x] Conectar input de busca ao estado
 - [x] Exibir mensagem quando nenhum contato for encontrado
+
+## Deploy no GitHub
+
+- [x] Verificar repositório GitHub
+- [x] Inicializar git no projeto
+- [x] Fazer commit inicial
+- [x] Fazer push para o GitHub
+
+## Conversão TypeScript para JavaScript
+
+- [x] Converter arquivos .tsx para .jsx
+- [x] Converter arquivos .ts para .js
+- [x] Remover interfaces e tipos TypeScript
+- [x] Remover configurações do TypeScript
+- [x] Atualizar ESLint para JavaScript
+- [x] Testar aplicação

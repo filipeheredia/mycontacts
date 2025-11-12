@@ -1,17 +1,9 @@
 import { useState, useMemo } from 'react';
 
-interface Contact {
-  id: number;
-  name: string;
-  email: string;
-  phone: string;
-  category: string;
-}
-
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
   
-  const [contacts] = useState<Contact[]>([
+  const [contacts] = useState([
     {
       id: 1,
       name: 'Mateus Silva',
